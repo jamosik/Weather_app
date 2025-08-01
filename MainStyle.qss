@@ -1,0 +1,9 @@
+QLabel{
+/*    qproperty-alignment: AlignCenter;*/
+    font: "Montserrat";
+}
+
+QGroupBox{
+/*    border: solid 2px #000000;*/
+    border-radius: 10px;
+}
