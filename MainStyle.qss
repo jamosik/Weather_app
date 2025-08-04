@@ -3,7 +3,26 @@ QLabel{
     font: "Montserrat";
 }
 
-QGroupBox{
-/*    border: solid 2px #000000;*/
-    border-radius: 10px;
+QGroupBox {
+border: 3px solid gray;
+border-color: #FF17365D;
+margin-top: 10px;
+border-radius: 15px;
+}
+QGroupBox::title {
+border-bottom-right-radius: 9px;
+padding: 2px 82px;
+background-color: #FF17365D;
+color: rgb(255, 255, 255);
+}
+QMainWindow{
+
+    background-color: #FFFFac;
+}
+QPushButton#SearchButton {
+    background-color: #FF17365D;
+    color: white;
+    font-size: 16px;
+    padding: 10px;
+    border-radius: 9px;
 }

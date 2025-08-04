@@ -26,135 +26,301 @@
    <string>MainWindow</string>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <layout class="QVBoxLayout" name="mainLayout">
-    <property name="spacing">
-     <number>20</number>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <widget class="QGroupBox" name="groupBox">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>30</y>
+      <width>921</width>
+      <height>161</height>
+     </rect>
     </property>
-    <property name="sizeConstraint">
-     <enum>QLayout::SetDefaultConstraint</enum>
+    <property name="title">
+     <string>Info Input</string>
     </property>
-    <property name="leftMargin">
-     <number>30</number>
-    </property>
-    <property name="topMargin">
-     <number>30</number>
-    </property>
-    <property name="rightMargin">
-     <number>30</number>
-    </property>
-    <property name="bottomMargin">
-     <number>30</number>
-    </property>
-    <item>
-     <widget class="QGroupBox" name="groupBox">
-      <property name="title">
-       <string>Info Input</string>
-      </property>
-      <layout class="QGridLayout" name="gridLayout" rowstretch="0,0,0,0,0,0" columnstretch="1,1,1,1">
-       <property name="spacing">
-        <number>8</number>
+    <layout class="QGridLayout" name="gridLayout" rowstretch="0,0,0,0,0" columnstretch="1,1,1,1">
+     <property name="spacing">
+      <number>8</number>
+     </property>
+     <item row="1" column="0">
+      <widget class="QLabel" name="CityLabel">
+       <property name="styleSheet">
+        <string notr="true">font: 18pt &quot;Montserrat&quot;;</string>
        </property>
-       <item row="1" column="0">
-        <widget class="QLabel" name="CityLabel">
-         <property name="styleSheet">
-          <string notr="true">font: 18pt &quot;Montserrat&quot;;</string>
-         </property>
-         <property name="text">
-          <string>Please input your city:</string>
-         </property>
-        </widget>
-       </item>
-       <item row="4" column="0" colspan="2">
-        <widget class="QLabel" name="CityErrLabel">
-         <property name="styleSheet">
-          <string notr="true">color: rgb(255, 0, 0);
+       <property name="text">
+        <string>Please input your city:</string>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="0" colspan="2">
+      <widget class="QLabel" name="CityErrLabel">
+       <property name="styleSheet">
+        <string notr="true">color: rgb(255, 0, 0);
 font: 18pt &quot;Montserrat&quot;;</string>
-         </property>
-         <property name="text">
-          <string>Please enter a valid city</string>
-         </property>
-        </widget>
-       </item>
-       <item row="1" column="1" colspan="3">
-        <widget class="QLineEdit" name="CityEdit">
-         <property name="styleSheet">
-          <string notr="true">font: 12pt &quot;Montserrat&quot;;</string>
-         </property>
-         <property name="text">
-          <string>Madrit</string>
-         </property>
-        </widget>
-       </item>
-       <item row="4" column="2">
-        <widget class="QPushButton" name="SearchButton">
-         <property name="enabled">
-          <bool>true</bool>
-         </property>
-         <property name="text">
-          <string>SEARCH</string>
-         </property>
-        </widget>
-       </item>
-      </layout>
-     </widget>
-    </item>
-    <item>
-     <widget class="QGroupBox" name="groupBox_2">
-      <property name="title">
-       <string>Current temp</string>
-      </property>
-      <layout class="QGridLayout" name="gridLayout_2">
-       <item row="2" column="0" rowspan="2">
-        <widget class="QLabel" name="TempDispLabel">
-         <property name="styleSheet">
-          <string notr="true">font: 30pt &quot;Montserrat&quot;;</string>
-         </property>
-         <property name="text">
-          <string>TextLabel</string>
-         </property>
-        </widget>
-       </item>
-       <item row="0" column="0" rowspan="2">
-        <widget class="QLabel" name="CityDispLabel">
-         <property name="styleSheet">
-          <string notr="true">font: 30pt &quot;Montserrat&quot;;</string>
-         </property>
-         <property name="text">
-          <string>TextLabel</string>
-         </property>
-        </widget>
-       </item>
-       <item row="0" column="2" rowspan="4" alignment="Qt::AlignRight">
-        <widget class="QLabel" name="WeatherImg">
-         <property name="sizePolicy">
-          <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
-           <horstretch>0</horstretch>
-           <verstretch>0</verstretch>
-          </sizepolicy>
-         </property>
-         <property name="text">
-          <string>TextLabel</string>
-         </property>
-        </widget>
-       </item>
-      </layout>
-     </widget>
-    </item>
-    <item>
-     <widget class="QGroupBox" name="groupBox_3">
-      <property name="title">
-       <string>maybe wind</string>
-      </property>
-     </widget>
-    </item>
-    <item>
-     <widget class="QGroupBox" name="groupBox_4">
-      <property name="title">
-       <string>future forecast</string>
-      </property>
-     </widget>
-    </item>
-   </layout>
+       </property>
+       <property name="text">
+        <string>Please enter a valid city</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="1" colspan="3">
+      <widget class="QLineEdit" name="CityEdit">
+       <property name="styleSheet">
+        <string notr="true">font: 12pt &quot;Montserrat&quot;;</string>
+       </property>
+       <property name="text">
+        <string>Madrit</string>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="2">
+      <widget class="QPushButton" name="SearchButton">
+       <property name="enabled">
+        <bool>true</bool>
+       </property>
+       <property name="text">
+        <string>SEARCH</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QGroupBox" name="groupBox_2">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>202</y>
+      <width>921</width>
+      <height>183</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>Current temp</string>
+    </property>
+    <layout class="QGridLayout" name="gridLayout_2">
+     <item row="0" column="1" rowspan="2">
+      <spacer name="horizontalSpacer">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>529</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item row="0" column="4" rowspan="2">
+      <spacer name="horizontalSpacer_2">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>529</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item row="1" column="0">
+      <widget class="QLabel" name="TempDispLabel">
+       <property name="minimumSize">
+        <size>
+         <width>250</width>
+         <height>72</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>250</width>
+         <height>72</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font: 30pt &quot;Montserrat&quot;;</string>
+       </property>
+       <property name="text">
+        <string>TextLabel</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="0">
+      <widget class="QLabel" name="CityDispLabel">
+       <property name="minimumSize">
+        <size>
+         <width>250</width>
+         <height>72</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>250</width>
+         <height>72</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font: 30pt &quot;Montserrat&quot;;</string>
+       </property>
+       <property name="text">
+        <string>TextLabel</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="2" rowspan="2" colspan="2">
+      <widget class="QLabel" name="WeatherImg">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>150</width>
+         <height>150</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>TextLabel</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QGroupBox" name="groupBox_Wind">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>405</y>
+      <width>921</width>
+      <height>161</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>Wind</string>
+    </property>
+    <layout class="QGridLayout" name="gridLayout_3">
+     <item row="0" column="0" rowspan="2">
+      <widget class="QLabel" name="WindDir1">
+       <property name="text">
+        <string>TextLabel</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="0">
+      <widget class="QLabel" name="WindSpeed1">
+       <property name="text">
+        <string>TextLabel</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="1">
+      <widget class="QLabel" name="WindSpeed2">
+       <property name="text">
+        <string>TextLabel</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="1" rowspan="2">
+      <widget class="QLabel" name="WindDir2">
+       <property name="text">
+        <string>TextLabel</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="2">
+      <widget class="QLabel" name="WindSpeed3">
+       <property name="text">
+        <string>TextLabel</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="2" rowspan="2">
+      <widget class="QLabel" name="WindDir3">
+       <property name="text">
+        <string>TextLabel</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="3">
+      <widget class="QLabel" name="WindSpeed4">
+       <property name="text">
+        <string>TextLabel</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="3" rowspan="2">
+      <widget class="QLabel" name="WindDir4">
+       <property name="text">
+        <string>TextLabel</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="4">
+      <widget class="QLabel" name="WindSpeed5">
+       <property name="text">
+        <string>TextLabel</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="4" rowspan="2">
+      <widget class="QLabel" name="WindDir5">
+       <property name="text">
+        <string>TextLabel</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="5">
+      <widget class="QLabel" name="WindSpeed6">
+       <property name="text">
+        <string>TextLabel</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="5" rowspan="2">
+      <widget class="QLabel" name="WindDir6">
+       <property name="text">
+        <string>TextLabel</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="6">
+      <widget class="QLabel" name="WindSpeed7">
+       <property name="text">
+        <string>TextLabel</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="6" rowspan="2">
+      <widget class="QLabel" name="WindDir7">
+       <property name="text">
+        <string>TextLabel</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QGroupBox" name="groupBox_4">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>577</y>
+      <width>921</width>
+      <height>152</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>future forecast</string>
+    </property>
+   </widget>
   </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">
